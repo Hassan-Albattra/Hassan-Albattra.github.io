@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hassan AlBattra | DevOps Engineer & Cloud Architect</title>
+  <meta name="description" content="Hassan Saeed Hassan AlBattra — DevOps Engineer, MSc Computer Software Engineering (Queen's University), AWS & Cloud Infrastructure specialist, CI/CD, Kubernetes, Terraform." />
+  <meta property="og:title" content="Hassan AlBattra | DevOps Engineer" />
+  <meta property="og:description" content="DevOps Engineer specializing in Cloud Infrastructure, CI/CD, Kubernetes, Terraform, and AI-Native Software Engineering." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:image" content="profile.jpeg" />
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230d1117'/><text x='32' y='44' font-size='18' font-family='monospace' font-weight='900' fill='%2360a5fa' text-anchor='middle'>HAB</text></svg>">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progressBar"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-name">Hassan</span>
+      <span class="logo-bracket"> /&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home"    class="nav-link active"><i class="fa fa-terminal"></i><span>Home</span></a></li>
+      <li><a href="#about"   class="nav-link"><i class="fa fa-user-astronaut"></i><span>About</span></a></li>
+      <li><a href="#skills"  class="nav-link"><i class="fa fa-layer-group"></i><span>Skills</span></a></li>
+      <li><a href="#projects" class="nav-link"><i class="fa fa-code-branch"></i><span>Projects</span></a></li>
+      <li><a href="#contact" class="nav-link"><i class="fa fa-satellite-dish"></i><span>Contact</span></a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><i class="fa fa-bars"></i></button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home"    class="mob-link"><i class="fa fa-terminal"></i> Home</a>
+    <a href="#about"   class="mob-link"><i class="fa fa-user-astronaut"></i> About</a>
+    <a href="#skills"  class="mob-link"><i class="fa fa-layer-group"></i> Skills</a>
+    <a href="#projects" class="mob-link"><i class="fa fa-code-branch"></i> Projects</a>
+    <a href="#contact" class="mob-link"><i class="fa fa-satellite-dish"></i> Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="home">
+    <div class="matrix-bg" id="matrixBg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+          <span class="t-title">bash ~ hassan@devops</span>
+        </div>
+        <div class="terminal-body">
+          <p class="t-line"><span class="t-prompt">$</span> whoami</p>
+          <p class="t-output hero-name">Hassan AlBattra</p>
+          <p class="t-line"><span class="t-prompt">$</span> cat role.txt</p>
+          <p class="t-output"><span class="typed-text" id="typedText"></span><span class="cursor">▌</span></p>
+          <p class="t-line"><span class="t-prompt">$</span> echo $LOCATION</p>
+          <p class="t-output">Queen's University, Kingston 🇨🇦 &nbsp;|&nbsp; Giza, Egypt 🇪🇬</p>
+          <p class="t-line blink-line"><span class="t-prompt">$</span> <span class="cursor-block">█</span></p>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="badge"><i class="fab fa-aws"></i> AWS</span>
+        <span class="badge"><i class="fab fa-docker"></i> Docker</span>
+        <span class="badge"><i class="fa fa-dharmachakra"></i> Kubernetes</span>
+        <span class="badge"><i class="fa fa-code-branch"></i> CI/CD</span>
+        <span class="badge"><i class="fa fa-cloud"></i> Terraform</span>
+        <span class="badge"><i class="fa fa-robot"></i> MLOps</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fa fa-code-branch"></i> View Projects</a>
+        <a href="hassan-saeed.pdf" class="btn-outline" download><i class="fa fa-file-code"></i> Download CV</a>
+        <a href="#contact" class="btn-ghost"><i class="fa fa-satellite-dish"></i> Contact</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">300+</span><span class="stat-label">Students Taught</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">339K</span><span class="stat-label">URLs Dataset</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">MSc</span><span class="stat-label">Queen's Univ.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-tag">// about</span>
+      <h2>Who Am <span>I?</span></h2>
+    </div>
+    <div class="about-grid">
+      <!-- Info card -->
+      <div class="about-card glass-card">
+        <img src="profile.jfif" alt="Hassan AlBattra" class="profile-photo" />
+        <h3>Hassan S. AlBattra</h3>
+        <p class="about-role">DevOps Engineer &amp; MSc Researcher</p>
+        <div class="info-list">
+          <div class="info-row"><i class="fa fa-location-dot"></i><span>Giza, Egypt</span></div>
+          <div class="info-row"><i class="fa fa-graduation-cap"></i><span>Queen's University, Canada</span></div>
+          <div class="info-row"><i class="fa fa-envelope"></i><span>hassan.albattra@outlook.com</span></div>
+          <div class="info-row"><i class="fab fa-github"></i><a href="https://github.com/Hassan-Albattra" target="_blank">Hassan-Albattra</a></div>
+          <div class="info-row"><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/hassan-albattra" target="_blank">hassan-albattra</a></div>
+          <div class="info-row"><i class="fa fa-phone"></i><span>+201159874789</span></div>
+        </div>
+        <a href="hassan-saeed.pdf" class="btn-download" download><i class="fa fa-download"></i> Download CV</a>
+      </div>
+
+      <!-- Bio + Education -->
+      <div class="about-right">
+        <p class="bio-text">DevOps Engineer with MSc-level training in cloud computing and AI-native software engineering. Focused on cloud infrastructure, CI/CD automation, containerized deployments, and security-first pipeline design. Hands-on experience provisioning AWS infrastructure with Terraform, deploying containerized ML models on EC2, and building end-to-end cloud pipelines (S3, EMR, VPC, IAM).</p>
+
+        <div class="edu-timeline">
+          <h4 class="sub-heading"><i class="fa fa-graduation-cap"></i> Education</h4>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card glass-card">
+              <span class="edu-year">Jan 2026 – Present</span>
+              <h5>MSc – Computer Software Engineering</h5>
+              <p>Queen's University, Kingston, ON, Canada</p>
+              <span class="edu-note">Digilians Initiative — Fully funded national scholarship by Egypt's MCIT</span>
+
+              <div class="program-tracks">
+                <div class="track-item active-track">
+                  <div class="track-header">
+                    <span class="track-badge enrolled"><i class="fa fa-circle-check"></i> Enrolled</span>
+                    <strong>Software Design in the AI Era (SD-AI)</strong>
+                  </div>
+                  <p class="track-desc">12-month program emphasizing AI-native software development processes and AI-native software systems, where AI serves as a core component — significantly reducing or eliminating traditional code. Covers AI-powered environments, prompt engineering, no-code/vibe-coding, automated software generation, ethics in AI deployment, and adaptive architecture.</p>
+                </div>
+
+                <div class="track-item">
+                  <div class="track-header">
+                    <span class="track-badge"><i class="fa fa-shield-halved"></i> Track</span>
+                    <strong>Cyber Security Intelligence (CSI)</strong>
+                  </div>
+                  <p class="track-desc">12-month program by Queen's Centre for Security &amp; Privacy (QCSP). Covers malware mitigation, vulnerability assessment, cryptography, incident response, IoT security, forensic analysis, and policing.</p>
+                </div>
+
+                <div class="track-item">
+                  <div class="track-header">
+                    <span class="track-badge"><i class="fa fa-chart-simple"></i> Track</span>
+                    <strong>Data Science &amp; Machine Learning</strong>
+                  </div>
+                  <p class="track-desc">12-month program addressing growing industry demand for Data Science and ML graduates across tech, healthcare, automotive, research, and government sectors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card glass-card">
+              <span class="edu-year">Sep 2023 – Dec 2025</span>
+              <h5>MSc – Electrical Engineering (Comp &amp; Systems)</h5>
+              <p>Fayoum University, Egypt</p>
+              <span class="edu-note">Thesis: Phishing URL Detection — Docker, ONNX, 339K dataset published</span>
+            </div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card glass-card">
+              <span class="edu-year">Sep 2019 – Feb 2023</span>
+              <h5>BEng – Electrical Engineering (Comp &amp; Software)</h5>
+              <p>MUST University, Giza, Egypt</p>
+              <span class="edu-note">GPA: 3.4/4.0 (85.2%) · 🏆 Ranked 1st in Class</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="exp-block">
+          <h4 class="sub-heading"><i class="fa fa-briefcase"></i> Experience</h4>
+          <div class="edu-card glass-card">
+            <span class="edu-year">Feb 2023 – Present</span>
+            <h5>Teaching Assistant – Computer &amp; Software Engineering</h5>
+            <p>Misr University for Science and Technology (MUST), Giza</p>
+            <ul class="exp-list">
+              <li>Delivered lectures &amp; labs for 300+ students/semester in Data Security, Cryptography, and Network Security</li>
+              <li>Designed 15+ hands-on labs on encryption, ethical hacking, threat modeling</li>
+              <li>Supervised 10+ capstone projects; mentored students on Git &amp; secure SDLC</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-tag">// skills</span>
+      <h2>Tech <span>Stack</span></h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-cat glass-card">
+        <div class="skill-cat-icon"><i class="fab fa-aws"></i></div>
+        <h4>Cloud / DevOps</h4>
+        <div class="skill-tags">
+          <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span>
+          <span>CloudFormation</span><span>Ansible</span><span>CI/CD</span><span>GitHub Actions</span>
+          <span>Jenkins</span><span>ArgoCD</span><span>GitOps</span><span>Linux</span><span>IaC</span>
+        </div>
+      </div>
+
+      <div class="skill-cat glass-card">
+        <div class="skill-cat-icon"><i class="fa fa-cloud"></i></div>
+        <h4>AWS Services</h4>
+        <div class="skill-tags">
+          <span>EC2</span><span>S3</span><span>EMR</span><span>Lambda</span><span>API Gateway</span>
+          <span>DynamoDB</span><span>RDS</span><span>VPC</span><span>IAM</span><span>ECS</span>
+          <span>EKS</span><span>CloudWatch</span><span>CodePipeline</span><span>CodeBuild</span>
+        </div>
+      </div>
+
+      <div class="skill-cat glass-card">
+        <div class="skill-cat-icon"><i class="fa fa-robot"></i></div>
+        <h4>AI / ML &amp; MLOps</h4>
+        <div class="skill-tags">
+          <span>PyTorch</span><span>ONNX Runtime</span><span>scikit-learn</span><span>XGBoost</span>
+          <span>HuggingFace</span><span>QLoRA/PEFT</span><span>Ollama</span><span>GGUF</span>
+          <span>RAG</span><span>LangChain</span><span>Gradio</span><span>MLflow</span><span>DVC</span>
+        </div>
+      </div>
+
+      <div class="skill-cat glass-card">
+        <div class="skill-cat-icon"><i class="fa fa-shield-halved"></i></div>
+        <h4>DevSecOps</h4>
+        <div class="skill-tags">
+          <span>Secure Pipelines</span><span>Secrets Management</span><span>IAM Least Privilege</span>
+          <span>Encryption</span><span>MFA</span><span>Threat Modeling</span><span>SBOM</span>
+          <span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span>
+        </div>
+      </div>
+
+      <div class="skill-cat glass-card">
+        <div class="skill-cat-icon"><i class="fa fa-code"></i></div>
+        <h4>Languages</h4>
+        <div class="skill-bars">
+          <div class="skill-bar-item"><span>Python</span><div class="bar"><div class="bar-fill" data-w="95"></div></div><span>95%</span></div>
+          <div class="skill-bar-item"><span>Bash/Shell</span><div class="bar"><div class="bar-fill" data-w="88"></div></div><span>88%</span></div>
+          <div class="skill-bar-item"><span>Java / C++</span><div class="bar"><div class="bar-fill" data-w="78"></div></div><span>78%</span></div>
+          <div class="skill-bar-item"><span>JavaScript</span><div class="bar"><div class="bar-fill" data-w="72"></div></div><span>72%</span></div>
+          <div class="skill-bar-item"><span>SQL / YAML</span><div class="bar"><div class="bar-fill" data-w="85"></div></div><span>85%</span></div>
+        </div>
+      </div>
+
+      <div class="skill-cat glass-card">
+        <div class="skill-cat-icon"><i class="fa fa-database"></i></div>
+        <h4>Databases &amp; Tools</h4>
+        <div class="skill-tags">
+          <span>PostgreSQL</span><span>MongoDB</span><span>ChromaDB</span>
+          <span>Git</span><span>GitHub</span><span>Jupyter</span><span>VS Code</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certs -->
+    <div class="certs-row">
+      <h4 class="sub-heading center"><i class="fa fa-certificate"></i> Certifications &amp; Training</h4>
+      <div class="cert-cards">
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fab fa-aws"></i></div>
+          <p>AWS Developer Associate</p>
+          <span class="cert-status in-progress">In Progress</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fab fa-aws"></i></div>
+          <p>AWS DevOps Engineer Associate</p>
+          <span class="cert-status in-progress">In Progress</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fa fa-cloud"></i></div>
+          <p>AWS DevOps Track (180 hrs, NTI)</p>
+          <span class="cert-status done">Completed</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fa fa-shield-halved"></i></div>
+          <p>Offensive Cybersecurity (B.S.A)</p>
+          <span class="cert-status done">Completed</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fa fa-lock"></i></div>
+          <p>Cybersecurity II – Security Meter</p>
+          <span class="cert-status done">Completed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-tag">// projects</span>
+      <h2>Featured <span>Work</span></h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="proj-card glass-card" data-modal="m1">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fa fa-dharmachakra"></i></div>
+          <div class="proj-links">
+            <span class="proj-tag">CI/CD · GitOps · K8s</span>
+            <a href="https://github.com/Hassan-Albattra/devops-sentiment-k8s-gitops" target="_blank" class="proj-link-btn" onclick="event.stopPropagation()" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h4>DevOps Sentiment K8s GitOps</h4>
+        <p>Complete CI/CD + GitOps pipeline for a FastAPI/TextBlob ML microservice with ArgoCD, Prometheus, and canary releases.</p>
+        <div class="proj-tech"><span>k3d</span><span>ArgoCD</span><span>Prometheus</span><span>Grafana</span><span>Docker</span><span>FastAPI</span></div>
+        <div class="proj-hover"><i class="fa fa-arrow-up-right-from-square"></i> View Details</div>
+      </div>
+
+      <div class="proj-card glass-card featured" data-modal="m2">
+        <div class="proj-badge">⭐ Featured</div>
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fab fa-aws"></i></div>
+          <div class="proj-links">
+            <span class="proj-tag">Cloud · LLM · Terraform</span>
+            <a href="https://github.com/Hassan-Albattra/Cyber-SOC-Chatbot" target="_blank" class="proj-link-btn" onclick="event.stopPropagation()" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h4>Cyber-SOC-Chatbot</h4>
+        <p>End-to-end AWS cloud LLM system: Terraform IaC, PySpark on EMR (20M+ events), TinyLlama fine-tuned with QLoRA, served via OpenWebUI.</p>
+        <div class="proj-tech"><span>AWS</span><span>Terraform</span><span>EMR</span><span>TinyLlama</span><span>QLoRA</span><span>Ollama</span></div>
+        <div class="proj-hover"><i class="fa fa-arrow-up-right-from-square"></i> View Details</div>
+      </div>
+
+      <div class="proj-card glass-card featured" data-modal="m3">
+        <div class="proj-badge">📄 Published</div>
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fa fa-shield-virus"></i></div>
+          <div class="proj-links">
+            <span class="proj-tag">ML · Docker · ONNX</span>
+            <a href="https://zenodo.org/records/19916344" target="_blank" class="proj-link-btn zenodo" onclick="event.stopPropagation()" title="Dataset on Zenodo"><i class="fa fa-database"></i></a>
+          </div>
+        </div>
+        <h4>EdgePhish-5G</h4>
+        <p>Dockerized hybrid BERT–TF-IDF phishing detection pipeline. ONNX optimization reduced P99 latency 2.36× (17.2ms → 7.3ms), meeting ≤10ms SLA.</p>
+        <div class="proj-tech"><span>BERT</span><span>ONNX</span><span>Docker</span><span>Python</span><span>TF-IDF</span></div>
+        <div class="proj-hover"><i class="fa fa-arrow-up-right-from-square"></i> View Details</div>
+      </div>
+
+      <div class="proj-card glass-card" data-modal="m4">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fa fa-shield-halved"></i></div>
+          <div class="proj-links">
+            <span class="proj-tag">RAG · GenAI · Safety</span>
+            <a href="https://github.com/Hassan-Albattra/GuardedRAG_Tutor" target="_blank" class="proj-link-btn" onclick="event.stopPropagation()" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://huggingface.co/spaces/hassanalbattra/GuardedRAG_Tutor" target="_blank" class="proj-link-btn hf" onclick="event.stopPropagation()" title="Live Demo on HuggingFace"><i class="fa fa-rocket"></i></a>
+          </div>
+        </div>
+        <h4>GuardedRAG</h4>
+        <p>Secure 5-stage RAG pipeline: PDF ingestion → LangChain → ChromaDB → Gemini 2.5 Flash + OpenAI Moderation. Deployed via Gradio.</p>
+        <div class="proj-tech"><span>LangChain</span><span>ChromaDB</span><span>Gemini</span><span>Gradio</span><span>RAG</span></div>
+        <div class="proj-hover"><i class="fa fa-arrow-up-right-from-square"></i> View Details</div>
+      </div>
+
+      <div class="proj-card glass-card" data-modal="m5">
+        <div class="proj-top">
+          <div class="proj-icon"><i class="fa fa-chart-bar"></i></div>
+          <div class="proj-links">
+            <span class="proj-tag">ML · XGBoost · Data</span>
+            <a href="https://github.com/Hassan-Albattra/crime-type-classification" target="_blank" class="proj-link-btn" onclick="event.stopPropagation()" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h4>Crime Type Classification</h4>
+        <p>Leakage-aware ML pipeline on 241K Toronto crime records. XGBoost with inverse-frequency weighting achieved best macro F1 (0.426) across 5 crime types.</p>
+        <div class="proj-tech"><span>XGBoost</span><span>SMOTE</span><span>scikit-learn</span><span>GridSearchCV</span><span>MLP</span></div>
+        <div class="proj-hover"><i class="fa fa-arrow-up-right-from-square"></i> View Details</div>
+      </div>
+
+    </div>
+
+    <!-- Publication -->
+    <div class="publication glass-card">
+      <div class="pub-icon"><i class="fa fa-file-lines"></i></div>
+      <div class="pub-content">
+        <span class="pub-label">📰 Publication — Submitted 2026</span>
+        <h4>EdgePhish-5G: Hybrid BERT–TF-IDF Phishing URL Detection for Real-Time 5G Edge Deployment</h4>
+        <p>H. AlBattra, R. Abul Seoud, D. A. Salem — Submitted to ITC, 2026.</p>
+        <div class="pub-tags"><span>Phishing Detection</span><span>BERT</span><span>5G Edge</span><span>ONNX</span><span>Dataset: 339K URLs</span></div>
+        <div class="pub-links">
+          <a href="https://zenodo.org/records/19916344" target="_blank" class="pub-link-btn"><i class="fa fa-database"></i> Dataset on Zenodo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-tag">// contact</span>
+      <h2>Get In <span>Touch</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <p class="contact-intro">Open to DevOps roles, cloud engineering positions, research collaborations, and consulting opportunities.</p>
+        <div class="contact-items">
+          <a href="mailto:hassan.albattra@outlook.com" class="contact-item glass-card">
+            <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+            <div><h5>Email</h5><p>hassan.albattra@outlook.com</p></div>
+          </a>
+          <a href="https://github.com/Hassan-Albattra" target="_blank" class="contact-item glass-card">
+            <div class="ci-icon"><i class="fab fa-github"></i></div>
+            <div><h5>GitHub</h5><p>github.com/Hassan-Albattra</p></div>
+          </a>
+          <a href="https://linkedin.com/in/hassan-albattra" target="_blank" class="contact-item glass-card">
+            <div class="ci-icon"><i class="fab fa-linkedin"></i></div>
+            <div><h5>LinkedIn</h5><p>linkedin.com/in/hassan-albattra</p></div>
+          </a>
+          <a href="tel:+201159874789" class="contact-item glass-card">
+            <div class="ci-icon"><i class="fa fa-phone"></i></div>
+            <div><h5>Phone</h5><p>+20 115 987 4789</p></div>
+          </a>
+          <a href="https://wa.me/201159874789" target="_blank" class="contact-item glass-card">
+            <div class="ci-icon wa-icon"><i class="fab fa-whatsapp"></i></div>
+            <div><h5>WhatsApp</h5><p>+20 115 987 4789</p></div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form glass-card" id="contactForm" action="https://formsubmit.co/ajax/hassan.albattra@outlook.com" method="POST">
+        <div class="form-row">
+          <input type="text"  name="name"    placeholder="Your Name"  id="formName"  required />
+          <input type="email" name="email"   placeholder="Your Email" id="formEmail" required />
+        </div>
+        <input type="text" name="subject" placeholder="Subject" id="formSubject" />
+        <textarea name="message" placeholder="Your Message..." id="formMessage" rows="5" required></textarea>
+        <button type="submit" class="btn-primary" id="submitBtn"><i class="fa fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/Hassan-Albattra" target="_blank" class="footer-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/hassan-albattra" target="_blank" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:hassan.albattra@outlook.com" class="footer-icon"><i class="fa fa-envelope"></i></a>
+      <a href="https://wa.me/201159874789" target="_blank" class="footer-icon wa-footer"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>© 2026 <strong>Hassan AlBattra</strong> — DevOps Engineer &amp; MSc Researcher</p>
+    <p class="footer-sub">Queen's University · MUST · Cloud · Kubernetes · AI/ML</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/201159874789" target="_blank" class="wa-float" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box glass-card" id="modalBox">
+      <button class="modal-close" id="modalClose"><i class="fa fa-xmark"></i></button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
